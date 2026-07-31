@@ -10,6 +10,10 @@ Responder à pergunta: dado que as brancas abriram com determinada abertura, con
 
 Dados de partidas do Lichess (`data/raw/games.csv`), contendo resultado da partida, abertura jogada (código ECO), quantidade de lances na fase de abertura e ratings dos jogadores.
 
+Fonte: [Chess Game Dataset (Lichess)](https://www.kaggle.com/datasets/datasnaek/chess), disponível no Kaggle.
+
+> **Nota:** a pasta `data/` está no `.gitignore` e não é versionada no repositório. Baixe o dataset no link acima e coloque o arquivo como `data/raw/games.csv` antes de rodar o notebook.
+
 Após limpeza (remoção de nulos, duplicatas e colunas irrelevantes) e engenharia de features (criação da coluna `white_rating_diff`), o dataset processado fica disponível em `data/processed/chess_clean.csv`.
 
 ## Features utilizadas
